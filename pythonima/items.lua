@@ -4,6 +4,7 @@ minetest.register_craftitem("pythonima:gvr", {
     groups = {tool = 1},
     stack_max = 1,
     on_use = function(itemstack, user, pointed_thing)
+        minetest.add_entity(pointed_thing.above, "pythonima:dropbox")
     end,
 })
 
